@@ -1,0 +1,30 @@
+# Public repository must never contain user/runtime data.
+data/
+*.sqlite
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+*.log
+*诊断*.json
+*诊断*.txt
+
+# Release/build outputs are uploaded as GitHub Release assets only.
+release-assets/
+package-staging/
+dist/
+build/
+dist-public/
+build-public/
+spec-public/
+validation/
+__pycache__/
+*.pyc
+*.spec
+
+# Secrets and local configuration.
+.env
+.env.*
+*.key
+*.pem
+*.pfx
